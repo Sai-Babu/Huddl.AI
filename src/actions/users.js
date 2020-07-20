@@ -1,0 +1,13 @@
+export const actions = {
+    GET_USERS_REQUEST: "users/get_users_request",
+    GET_USERS_SUCCESS: "users/get_users_success"
+};
+
+export const getUsersRequest = () => ({
+    type: actions.GET_USERS_REQUEST
+});
+
+export const getUsersSuccess = (users) => ({
+    type: actions.GET_USERS_SUCCESS,
+    payload: users,
+});
